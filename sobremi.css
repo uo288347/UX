@@ -68,7 +68,7 @@ section > ul li::before {
   content: none;
 }
 
-li a {
+li > a {
   display: flex;
   align-items: center;
   gap: 0.75rem;

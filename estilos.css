@@ -250,6 +250,8 @@ img:hover, video:hover {
   transform: translateY(-0.125rem);
 }
 
+
+
 video {
   display: block;
   margin: 2rem auto;
@@ -270,6 +272,16 @@ picture {
 picture img {
   display: block;
   margin: 0 auto;
+}
+
+img[data-picture] {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  img[data-picture] {
+    max-width: 50%;
+  }
 }
 
 
