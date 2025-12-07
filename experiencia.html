@@ -39,10 +39,11 @@
   </header>
 
   <!-- Buscador global -->
-  <article data-search-container>
+  <section data-search-container aria-labelledby="search-heading">
+    <h2 data-heading="search" data-visually-hidden data-i18n="search.heading">Buscador</h2>
     <input type="search" placeholder="Buscar en todo el sitio..." aria-label="Buscar" data-i18n-placeholder="search.placeholder">
-    <article data-search-results aria-live="polite"></article>
-  </article>
+    <section data-search-results aria-live="polite"></section>
+  </section>
 
   <!-- Migas de pan -->
   <nav aria-label="Migas de pan" data-breadcrumb>
@@ -88,7 +89,7 @@
     </section>
 
     <section>
-      <h2>Proyectos</h2>
+      <h2 data-i18n="experience.projects">Proyectos</h2>
       <p>
         A lo largo del grado he ido descubriendo que me interesa mucho la usabilidad del software. Especialmente,
         lo relacionado con el desarrollo de aplicaciones para dispositivos móviles. Me atrae la idea de crear herramientas

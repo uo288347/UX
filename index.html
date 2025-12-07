@@ -44,15 +44,15 @@
     </header>
 
     <!-- Buscador global -->
-    <article data-search-container>
+    <section data-search-container aria-labelledby="search-heading">
+      <h2 data-heading="search" data-visually-hidden data-i18n="search.heading">Buscador</h2>
       <input type="search" placeholder="Buscar en todo el sitio..." aria-label="Buscar" data-i18n-placeholder="search.placeholder">
-      <article data-search-results aria-live="polite"></article>
-    </article>
+      <section data-search-results aria-live="polite"></section>
+    </section>
 
-    <section>
-      <h2 data-i18n="about.personal.data">Datos personales</h2>
-      
-      <article>
+    <section aria-labelledby="datos-heading">
+      <h2 data-heading="datos" data-i18n="about.personal.data">Datos personales</h2>
+      <article aria-labelledby="datos-heading">
         <figure>
           <picture>
             <source media="(max-width: 465px)" srcset="multimedia/imagenes/teresazoo_peq.jpg">

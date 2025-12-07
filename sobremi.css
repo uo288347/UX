@@ -6,7 +6,9 @@ section:nth-of-type(2) > article:first-of-type {
   align-items: start;
   margin-top: 2rem;
 }
-
+section {
+  margin-bottom: 2rem;
+}
 figure {
   position: sticky;
   top: 7.5rem;
