@@ -1,0 +1,73 @@
+/* Galería de imágenes para la página de viajes */
+section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+section > div > figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+section > div > figure:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow-lg);
+}
+
+section > div > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* Artículos de viajes con layout mejorado */
+main > section article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+main > section article:nth-child(even) {
+  direction: rtl;
+}
+
+main > section article:nth-child(even) > * {
+  direction: ltr;
+}
+
+main > section article > section {
+  padding: 1rem;
+}
+
+main > section article > figure {
+  position: sticky;
+  top: 7.5rem;
+}
+
+main > section article > figure picture {
+  margin: 0;
+}
+
+@media (max-width: 56.25rem) {
+  main > section article {
+    grid-template-columns: 1fr;
+  }
+  
+  main > section article:nth-child(even) {
+    direction: ltr;
+  }
+  
+  main > section article > figure {
+    position: static;
+  }
+}
