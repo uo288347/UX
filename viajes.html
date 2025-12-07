@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Viajes de Teresa González García">
+  <title>Viajes — Teresa González García</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="viajes.css">
+</head>
+<body>
+  <header>
+    <nav>
+          <a tabindex="1" accesskey="i" href="index.html" title="Sobre mi" data-i18n="nav.about">Sobre mí</a>
+          <a tabindex="2" accesskey="e" href="experiencia.html" title="mi experiencia" data-i18n="nav.experience">Experiencia</a>
+          <a tabindex="3" accesskey="a" href="aficiones.html" title="aficiones" data-i18n="nav.hobbies">Aficiones</a>
+          <a tabindex="4" accesskey="v" href="viajes.html" title="mis viajes" aria-current="page" data-i18n="nav.travels">Viajes</a>
+          <a tabindex="5" accesskey="h" href="ayuda.html" title="ayuda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: text-bottom; margin-right: 0.25rem;">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4"/>
+              <path d="M12 8h.01"/>
+            </svg>
+            <span data-i18n="nav.help">Ayuda</span>
+          </a>
+          <aside>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+              <path d="M2 12h20"/>
+            </svg>
+            <select data-language-selector>
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </aside>
+    </nav>
+    <h1 data-i18n="travels.title">Entre ruinas mayas y aguas cristalinas</h1>
+  </header>
+
+  <!-- Buscador global -->
+  <section data-search-container>
+    <input type="search" placeholder="Buscar en todo el sitio..." aria-label="Buscar" data-i18n-placeholder="search.placeholder">
+    <section data-search-results aria-live="polite"></section>
+  </section>
+
+  <!-- Migas de pan -->
+  <nav aria-label="Migas de pan" data-breadcrumb>
+    <ol>
+      <li><a href="index.html" data-i18n="breadcrumb.home">Inicio</a></li>
+      <li aria-current="page" data-i18n="nav.travels">Viajes</li>
+    </ol>
+  </nav>
+
+  <main>
+    <section>
+      <h2 data-i18n="travels.heading">Viaje de estudios a México</h2>
+      <p data-i18n="travels.intro">
+        Mi último gran viaje fue a México, una experiencia inolvidable que fue
+        nuestro viaje de estudios de la carrera. En este viaje, conocimos diferentes sitios e hicimos
+        actividades diversas.
+      </p>
+      
+      <article>
+        <section>
+          <h3 data-i18n="travels.playa">Playa del Carmen</h3>
+          <p data-i18n="travels.playa.text">
+          La primera parada fue Playa del Carmen, un lugar vibrante y lleno de vida. Sus calles
+          están repletas de tiendas, restaurantes y música que invitan a caminar y descubrir cada rincón.
+          Me encantó la mezcla de cultura mexicana con el ambiente cosmopolita que se respira allí.
+          Aprovechamos para disfrutar de sus playas en un beach club, aunque el agua estaba caliente y no 
+          había ninguna ola.
+          </p>
+        </section>
+        
+        <figure>
+          <picture>
+            <img alt="Foto de Playa del Carmen"  src="multimedia/imagenes/playa_del_carmen.jpg">
+          </picture>
+        </figure>
+      </article>
+
+      <article>
+        <section>
+          <h3 data-i18n="travels.isla">Isla Mujeres</h3>
+          <p data-i18n="travels.isla.text">
+          Visitamos Isla Mujeres, un paraíso caribeño de aguas turquesas y arena
+          blanca que parecía sacado de una postal. Pasear por la isla, beber un coco y el viaje en barco 
+          fue una de las experiencias más especiales del viaje.
+          Volvimos a Cancún en barco contemplando el atardecer, con unas vistas que parecían sacadas de una película.
+          </p>
+        </section>
+        
+        <figure>
+          <picture>
+            <source media="(max-width: 465px)" srcset="multimedia/imagenes/isla_mujeres_peq.jpg">
+            <source media="(max-width: 799px)" srcset="multimedia/imagenes/isla_mujeres_med.jpg">
+            <source media="(min-width: 800px)" srcset="multimedia/imagenes/isla_mujeres_gr.jpg">
+            <img alt="Foto del paisaje en isla mujeres"  src="multimedia/imagenes/isla_mujeres_gr.jpg">
+          </picture>
+        </figure>
+      </article>
+
+      <article>
+        <section>
+          <h3 data-i18n="travels.chichen.full">Chichen Itzá</h3>
+          <p data-i18n="travels.chichen.full.text">
+          Uno de los momentos más fascinantes fue la visita a Chichén Itzá, una de las siete
+          maravillas del mundo moderno. Estar frente a la majestuosa pirámide de Kulkulkán fue como
+          retroceder en el tiempo. Recorrer las ruinas y
+          aprender sobre su historia y su astronomía fue realmente impresionante, una lección viva de
+          cultura y arquitectura. Además, también pudimos darnos un baño en algún cenote, lo que hizo
+          la experiencia aún más inolvidable.
+          </p>
+        </section>
+        
+        <figure>
+          <picture>
+            <source media="(max-width: 465px)" srcset="multimedia/imagenes/chichen_itza_peq.jpg">
+            <source media="(max-width: 799px)" srcset="multimedia/imagenes/chichen_itza_med.jpg">
+            <source media="(min-width: 800px)" srcset="multimedia/imagenes/chichen_itza_gr.jpg">
+            <img alt="Foto de Chichen Itzá"  src="multimedia/imagenes/chichen_itza_gr.jpg">
+          </picture>
+        </figure>
+      </article>
+
+      <article>
+        <section>
+          <h3 data-i18n="travels.snorkel">Snorkel</h3>
+          <p data-i18n="travels.snorkel.text">
+          Durante el viaje también hicimos snorkel, una actividad que me dejó recuerdos
+          imborrables. Nadar entre peces de colores, pulpos y tortugas, observar los corales y sentir la tranquilidad del mar
+          fue una experiencia única. La claridad del agua permitía ver cada detalle del fondo marino,
+          convirtiendo cada inmersión en una especie de pequeño descubrimiento.
+          </p>
+        </section>
+        <figure>
+          <picture>
+            <img alt="Foto de Snorkel"  src="multimedia/imagenes/snorkel.jpg">
+          </picture>
+        </figure>
+      </article>    
+
+      <article>
+        <section>
+          <h3 data-i18n="travels.catamaran">Paseo en catamarán</h3>
+          <p data-i18n="travels.catamaran.text">
+          Tuvimos la oportunidad de dar un paseo en un pequeño catamarán. Sentir el agua cristalina tan cerca que se
+          podía tocar con la mano daba la sensación de estar directamente sobre el agua. Además, pudimos apreciar bien 
+          los diferentes colores de este agua.
+          </p>
+        </section>
+
+        <figure>
+          <picture>
+            <img alt="Foto de Paseo en catamarán"  src="multimedia/imagenes/catamaran.jpg">
+          </picture>
+        </figure>
+      </article>   
+
+      <p style="margin-top: 3rem;" data-i18n="travels.closing">
+        Aunque el clima fue caluroso y a veces agotador, cada día estuvo lleno de momentos que hicieron que
+        valiera la pena. Compartir esta aventura con mis compañeros de carrera lo hizo todavía más
+        especial, fortaleciendo amistades y creando anécdotas que recordaremos siempre.
+        Este viaje a México no solo fue una oportunidad para conocer lugares increíbles, sino también para
+        crecer, aprender y vivir experiencias que me acompañarán toda la vida.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teresa González García. Todos los derechos reservados.</p>
+    <p>Última modificación: 3 de diciembre de 2025</p>
+  </footer>
+  <script src="i18n.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
