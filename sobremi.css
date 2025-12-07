@@ -9,6 +9,10 @@ section:nth-of-type(2) > article:first-of-type {
 section {
   margin-bottom: 2rem;
 }
+
+section > article > h2 {
+  width: 100%;
+}
 figure {
   position: sticky;
   top: 7.5rem;
