@@ -24,13 +24,14 @@
             <span data-i18n="nav.help">Ayuda</span>
           </a>
           <aside>
-            <label data-i18n="lang.selector">Idioma</label>
+            <label for="language"  data-i18n="lang.selector">Idioma</label>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/>
               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
               <path d="M2 12h20"/>
             </svg>
-            <select data-language-selector>
+
+            <select id="language" data-language-selector aria-label="Idioma">
               <option value="es">Español</option>
               <option value="en">English</option>
             </select>
