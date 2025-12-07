@@ -25,7 +25,7 @@ figure img {
 dl {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 0;
+  column-gap: 0;
   row-gap: 1rem;
 }
 
@@ -34,19 +34,18 @@ dt {
   font-weight: 600;
   margin: 0;
   padding: 1rem;
-  background-color: #fafafa;
+  background-color: #fafafa; /*El color de fondo se define más arriba*/
   border-radius: 0.5rem 0 0 0.5rem;
   border-left: 0.25rem solid var(--color-primary);
-}
+} /*No se puede comprobar el CSS dinámico*/
 
 dd {
   margin: 0;
   padding: 1rem;
-  background-color: #fafafa;
+  background-color: #fafafa; /*El color se hereda de body*/
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-/* Estilos para la lista de contacto */
 section > ul {
   list-style: none;
   padding: 0;
@@ -74,7 +73,7 @@ li a {
   text-decoration: none;
   color: inherit;
   transition: background-color 0.2s ease;
-}
+} /*No se puede comprobar el CSS dinámico*/
 
 section:nth-of-type(4) > article:first-of-type {
   display: flex;
@@ -88,25 +87,25 @@ section:nth-of-type(4) > article:first-of-type {
   text-decoration: none;
   color: inherit;
   transition: background-color 0.2s ease;
-}
+} /*No se puede comprobar el CSS dinámico*/
 
 li a:hover,
 li a:focus {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /*El color se hereda de body*/
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
-}
+} /*No se puede comprobar el CSS dinámico*/
 
 li a svg {
   flex-shrink: 0;
   color: var(--color-primary);
-}
+} /*No se puede comprobar el CSS dinámico*/
 
 li a span {
   word-break: break-all;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 48rem) { /*Redefiniciones para pantallas pequeñas*/
   section:nth-of-type(2) > article:first-of-type {
     grid-template-columns: 1fr;
     gap: 2rem;

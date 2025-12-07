@@ -12,7 +12,7 @@ section > div > figure {
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   transition: var(--transition);
-}
+} /* No se puede comprobar el CSS dinámico */
 
 section > div > figure:hover {
   transform: translateY(-0.5rem);
@@ -58,7 +58,7 @@ main > section article > figure picture {
   margin: 0;
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 56.25rem) { /* Redefiniciones para pantallas pequeñas */
   main > section article {
     grid-template-columns: 1fr;
   }
