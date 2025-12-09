@@ -37,7 +37,6 @@ dl {
 
 dt {
   color: var(--color-primary-dark);
-  font-weight: 600;
   margin: 0;
   padding: 1rem;
   background-color: #fafafa; /*El color de fondo se define más arriba*/
